@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/rlAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="monospace"
+                android:text="KALKULATOR SEDERHANA"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold|normal" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llCurved"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="penambahan"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="PENAMBAHAN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#F44336"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="pengurangan"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="PENGURANGAN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#9C27B0"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="perkalian"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="PERKALIAN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#E91E63"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="pembagian"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="PEMBAGIAN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#FFCC00"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>
